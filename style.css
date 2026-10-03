@@ -1,0 +1,767 @@
+/* ================================
+   STAG CLOTHING STORE
+   MAIN STYLESHEET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: #171717;
+    background: #f8f7f4;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ANNOUNCEMENT */
+
+.announcement {
+    background: #171717;
+    color: #ffffff;
+    text-align: center;
+    padding: 11px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    min-height: 78px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    background: #f8f7f4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #deddd8;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.55;
+}
+
+.cart-button {
+    background: #171717;
+    color: #fff;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.cart-button span {
+    background: #fff;
+    color: #171717;
+    padding: 2px 6px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.72), rgba(0,0,0,0.18)),
+        url(IMAGES2/logo/ChatGPT\ Image\ Oct\ 3\,\ 2026\,\ 12_25_45\ AM.png)
+        center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.small-heading {
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(50px, 8vw, 95px);
+    line-height: 0.95;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    font-style: italic;
+}
+
+.hero p:not(.small-heading) {
+    max-width: 500px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.primary-btn {
+    background: #171717;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    background: #fff;
+    color: #171717;
+}
+
+.secondary-btn:hover {
+    background: #e9e9e9;
+}
+
+.white-btn {
+    background: #fff;
+    color: #171717;
+}
+
+.white-btn:hover {
+    background: #eee;
+}
+
+/* CUSTOM AD */
+
+.custom-ad {
+    margin: 70px auto;
+    width: 90%;
+    max-width: 1250px;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 55px 7%;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.85), rgba(0,0,0,0.25)),
+        url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1600&q=85")
+        center/cover no-repeat;
+}
+
+.custom-content {
+    max-width: 650px;
+}
+
+.ad-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.custom-ad h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 1;
+    margin-bottom: 18px;
+}
+
+.custom-ad h2 span {
+    font-style: italic;
+}
+
+.custom-ad p:not(.ad-label) {
+    margin-bottom: 25px;
+}
+
+/* PRODUCTS */
+
+.products-section {
+    padding: 90px 5%;
+}
+
+.light-section {
+    background: #efeee9;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(35px, 5vw, 55px);
+}
+
+/* PRODUCT GRID */
+
+.product-grid {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #fff;
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+}
+
+.product-image {
+    height: 390px;
+    position: relative;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.product-image img {
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.sale-badge {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    z-index: 2;
+    background: #171717;
+    color: white;
+    padding: 7px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.product-info strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.add-cart {
+    width: 100%;
+    padding: 12px;
+    background: #171717;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.add-cart:hover {
+    background: #444;
+}
+
+/* PROMOTION */
+
+.promo-section {
+    min-height: 450px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.25)),
+        url("https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+}
+
+.promo-section p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.promo-section h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 6vw, 75px);
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #171717;
+    color: white;
+    padding: 70px 7%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-brand h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 350px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.footer h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    background: #111;
+    color: #777;
+    padding: 18px;
+    font-size: 12px;
+}
+
+/* WHATSAPP */
+
+.whatsapp-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 58px;
+    height: 58px;
+    background: #25d366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    z-index: 900;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.08);
+}
+
+/* CART */
+
+.cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.cart-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-panel {
+    position: fixed;
+    right: -430px;
+    top: 0;
+    width: min(430px, 100%);
+    height: 100vh;
+    background: white;
+    z-index: 1600;
+    display: flex;
+    flex-direction: column;
+    transition: right 0.35s ease;
+    box-shadow: -10px 0 40px rgba(0,0,0,0.15);
+}
+
+.cart-panel.active {
+    right: 0;
+}
+
+.cart-header {
+    padding: 22px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-header h2 {
+    font-family: "Playfair Display", serif;
+}
+
+.close-cart {
+    background: transparent;
+    font-size: 32px;
+}
+
+.cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.empty-cart {
+    text-align: center;
+    color: #888;
+    margin-top: 60px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item h4 {
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    color: #777;
+    font-size: 13px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.quantity-controls button {
+    width: 27px;
+    height: 27px;
+    background: #171717;
+    color: white;
+    border-radius: 3px;
+}
+
+.remove-item {
+    background: transparent !important;
+    color: #c00 !important;
+    width: auto !important;
+    margin-left: 8px;
+}
+
+.cart-footer {
+    border-top: 1px solid #ddd;
+    padding: 20px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #25d366;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* POPUP */
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    position: relative;
+    width: min(500px, 100%);
+    padding: 55px 35px;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1000&q=80")
+        center/cover;
+}
+
+.popup > p {
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.popup h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.popup span {
+    display: block;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.popup-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    background: transparent;
+    color: white;
+    font-size: 32px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+
+    .hero {
+        min-height: 560px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .announcement {
+        font-size: 9px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .cart-button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 520px;
+        padding: 50px 6%;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .products-section {
+        padding: 65px 5%;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 430px;
+    }
+
+    .custom-ad {
+        width: 94%;
+        padding: 45px 7%;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand {
+        grid-column: auto;
+    }
+
+    .promo-section {
+        padding: 65px 7%;
+    }
+
+    .whatsapp-button {
+        right: 18px;
+        bottom: 18px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .popup {
+        padding: 50px 22px;
+    }
+
+    .popup h2 {
+        font-size: 30px;
+    }
+}
